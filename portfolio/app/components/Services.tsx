@@ -2,9 +2,13 @@ import { assets, serviceData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Services = () => {
+interface ServicesProps {
+  isDarkMode: boolean;
+}
+
+const Services = ({isDarkMode}:ServicesProps) => {
   return (
-    <div id='services' className='w-full px-[12%] py-10 scroll-mt-20'>
+    <div id='services' className='font-outfit w-full px-[12%] py-10 scroll-mt-20'>
       <h4 className='text-center mb-2 text-lg font-ovo'>What I Offer</h4>
       <h2 className='text-center text-5xl font-ovo'>My Services</h2>
 

@@ -2,7 +2,11 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Footer = () => {
+interface FooterProps {
+  isDarkMode: boolean;
+}
+
+const Footer = ({isDarkMode}:FooterProps) => {
     return (
         <div className='mt-20 font-outfit'>
             <div className='text-center'>

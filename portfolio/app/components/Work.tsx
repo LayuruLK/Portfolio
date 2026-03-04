@@ -2,9 +2,13 @@ import { assets, workData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Work = () => {
+interface WorkProps {
+  isDarkMode: boolean;
+}
+
+const Work = ({isDarkMode}:WorkProps) => {
     return (
-        <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
+        <div id='work' className='font-outfit w-full px-[12%] py-10 scroll-mt-20'>
             <h4 className='text-center mb-2 text-lg font-ovo'>My portfolio</h4>
             <h2 className='text-center text-5xl font-ovo'>My latest work</h2>
 
